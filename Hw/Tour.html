@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tours</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+         url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 2px;
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .destination-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .destination-content {
+            padding: 1.5rem;
+        }
+
+        .destination-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .destination-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            color: #27ae60;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .book-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .book-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .features {
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Explore the World</h1>
+            <p>Discover amazing destinations and create unforgettable memories with our curated tour packages.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="destinations">
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                <div class="destination-content">
+                    <h3>Bali, Indonesia</h3>
+                    <div class="features">
+                        <span class="feature">🌴 7 Days</span>
+                        <span class="feature">🏨 4 Star</span>
+                        <span class="feature">✈️ Flights Included</span>
+                    </div>
+                    <p>Experience the magic of Bali with its beautiful beaches, rich culture, and stunning landscapes.</p>
+                    <div class="price">From $999</div>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                <div class="destination-content">
+                    <h3>Paris, France</h3>
+                    <div class="features">
+                        <span class="feature">🗼 5 Days</span>
+                        <span class="feature">🏨 5 Star</span>
+                        <span class="feature">✈️ Flights Included</span>
+                    </div>
+                    <p>Discover the city of love with its iconic landmarks, world-class cuisine, and romantic atmosphere.</p>
+                    <div class="price">From $1299</div>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('https://www.hertz.com/us/en/blog/things-to-do/las-vegas-neighborhoods')"></div>
+                <div class="destination-content">
+                    <h3>America, Las vegas</h3>
+                    <div class="features">
+                        <span class="feature">🗼 6 Days</span>
+                        <span class="feature">🏨 4 Star</span>
+                        <span class="feature">✈️ Flights Included</span>
+                    </div>
+                    <p>Immerse yourself in Japanese culture with its unique blend of tradition and modernity.</p>
+                    <div class="price">From $1499</div>
+                    <a href="#" class="book-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
